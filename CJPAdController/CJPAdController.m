@@ -213,6 +213,7 @@ static CJPAdController *CJPSharedManager = nil;
         if (permanent) {
             _iAdView.delegate = nil;
             [_iAdView removeFromSuperview];
+            [_iAdView release];
             _iAdView = nil;
         }
     }
